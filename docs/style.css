@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border;
+    font-family: 'Poppins';
+}
+
+
+html::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+html::-webkit-scrollbar-track {
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: 5px 5px 10px #0d0d0d inset,
+        -5px -5px 10px #0B0B0E inset;
+    box-shadow: 5px 5px 10px #0d0d0d inset,
+        -5px -5px 10px #0B0B0E inset;
+    background: #4d4d4d;
+}
+
+html::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    -webkit-box-shadow: -5px -5px 10px #0d0d0d inset,
+        5px 5px 5px #4d4d4d inset;
+    box-shadow: -5px -5px 10px #0d0d0d inset,
+        5px 5px 5px #4d4d4d inset;
+    background: #262626;
+}
+
+body {
+    background-repeat: no-repeat;
+    background: -webkit-radial-gradient(top left, ellipse, rgba(222, 11, 70, 0.26) -160%, rgba(255, 255, 255, 0) 103%), -webkit-radial-gradient(center, ellipse cover, #0C1019 0%, #0B0B0E 100%);
+    background: -o-radial-gradient(top left, ellipse, rgba(222, 11, 70, 0.26) -160%, rgba(255, 255, 255, 0) 103%), -webkit-radial-gradient(center, ellipse cover, #0C1019 0%, #0B0B0E 100%);
+    background: radial-gradient(ellipse at top left, rgba(222, 11, 70, 0.26) -160%, rgba(255, 255, 255, 0) 103%), -webkit-radial-gradient(center, ellipse cover, #0C1019 0%, #0B0B0E 100%);
+    color: #FFF;
+    height: 50vh;
+    scroll-behavior: smooth;
+
+}
+
+nav {
+    font-size: 24px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+}
+
+nav .Title {
+    font-size: 36px;
+}
+
+
+.articles {
+    margin-bottom: 30px;
+}
+
+article {
+
+    border-radius: 7px;
+    border-bottom: 2px solid #8491C7;
+    box-shadow: -1px 1px 8px black;
+    margin-bottom: 15px;
+}
+
+article img {
+    width: 100%;
+    border-radius: 7px 7px 0 0;
+}
+
+article h1,
+article a,
+article p {
+    margin: 20px;
+    color: #fff;
+}
+
+article h1 {
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.1em;
+    line-height: 1.3em;
+}
+
+article p {
+    color: #FFF;
+    line-height: 1.4em;
+}
+
+article a {
+    display: block;
+    text-decoration: none;
+    background: #5396E7;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: 2px solid #4ca666;
+}
+
+div.Title {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    background: rgba(0, 0, 0, 0.4);
+
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-fill-color: rgba(222, 11, 70, 0.26);
+}
+
+footer {
+    padding: 15px;
+}
+
+.contain {
+    overflow: hidden;
+}
+
+.C {
+
+    background: none;
+    position: fixed;
+    top: 0;
+    left: -3%;
+    width: 100%;
+    z-index: -1;
+}
+
+canvas {
+    position: fixed;
+}
+
+/************************************************************** CV ***********************************************************/
+.head {
+    width: 100%;
+}
+
+.head ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 84px;
+    font-weight: bold;
+    list-style: none;
+}
+
+.head ul .a {
+    opacity: 1;
+}
+
+.container-fluid {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-top: 5%;
+
+}
+
+.testimonials {
+
+    position: relative;
+    max-width: 100%;
+    max-height: 90vh;
+    margin-bottom: 180px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent 70%, #0009);
+    box-reflect: below 1px linear-gradient(transparent 70%, #0009);
+}
+
+.testimonials .card {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    background: transparent;
+    padding: 60px 40px;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+.testimonials .card .layer {
+    position: absolute;
+    top: -webkit-calc(100% - 2px);
+    top: calc(100% - 2px);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#03a9f4), to(#e91ee3));
+    background: -webkit-linear-gradient(#03a9f4, #e91ee3);
+    background: -o-linear-gradient(#03a9f4, #e91ee3);
+    background: linear-gradient(#03a9f4, #e91ee3);
+    z-index: 1;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.testimonials .card:hover .layer {
+    -webkit-border-radius: 20px 20px 0px;
+    border-radius: 20px 20px 0px;
+
+}
+
+.testimonials .card .JS {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FDC830), to(#F37335));
+    background: -webkit-linear-gradient(#FDC830, #F37335);
+    background: -o-linear-gradient(#FDC830, #F37335);
+    background: linear-gradient(#FDC830, #F37335);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.testimonials .card .css {
+    background: -webkit-gradient(linear, left top, left bottom, from(#11998e), to(#38ef7d));
+    background: -webkit-linear-gradient(#11998e, #38ef7d);
+    background: -o-linear-gradient(#11998e, #38ef7d);
+    background: linear-gradient(#11998e, #38ef7d);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.testimonials .card .WP {
+    background: -webkit-gradient(linear, left top, left bottom, from(#E0EAFC), to(#CFDEF3));
+    background: -webkit-linear-gradient(#E0EAFC, #CFDEF3);
+    background: -o-linear-gradient(#E0EAFC, #CFDEF3);
+    background: linear-gradient(#E0EAFC, #CFDEF3);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.testimonials .card .PHP {
+    background: -webkit-gradient(linear, left top, left bottom, from(#667db6), color-stop(#0082c8), color-stop(#0082c8), to(#667db6));
+    background: -webkit-linear-gradient(#667db6, #0082c8, #0082c8, #667db6);
+    background: -o-linear-gradient(#667db6, #0082c8, #0082c8, #667db6);
+    background: linear-gradient(#667db6, #0082c8, #0082c8, #667db6);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.testimonials .card:hover .layer {
+    top: 0;
+}
+
+.testimonials .card .content {
+    position: relative;
+    z-index: 2;
+}
+
+.testimonials .card .content ul li {
+    list-style: none;
+}
+
+.testimonials .card .content h1 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.testimonials .card .content p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.testimonials .card .content .imgBox {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 10px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #0575E6;
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background: url(IMG/me.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.testimonials .card .content h2 {
+    font-size: 18px;
+    color: white;
+
+}
+
+.testimonials .card .content h2 span {
+    color: #03a9f4;
+    font-size: 14px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+
+}
+
+.testimonials .card:hover .content h2 span {
+    color: #fff;
+}
+
+/* hover perso */
+
+.testimonials .card:hover .content p {
+    color: #333;
+    -webkit-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+}
+
+.testimonials #dev .card:hover .content p {
+    color: white;
+    -webkit-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+}
+
+.testimonials .card:hover .content .perso {
+    color: #333;
+    -webkit-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+}
+
+.testimonials #php .card:hover .content p {
+    color: white;
+    -webkit-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+}
+
+.testimonials #Wp .card:hover .content p {
+    color: #0082c8;
+    -webkit-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+}
+
+
+.swiper-slide {
+
+    -webkit-border-radius: 20px 20px 0px;
+
+    border-radius: 20px 20px 0px;
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    min-height: 350px;
+    background: transparent;
+    margin: 0 20px;
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-top {
+    -webkit-border-radius: 20px 20px 0px;
+    border-radius: 20px 20px 0px;
+}
+
+.circle {
+    position: relative;
+
+    left: -webkit-calc(50% - 60px);
+
+    left: calc(50% - 60px);
+}
+
+.stroke {
+
+    stroke-dasharray: 360;
+    stroke-dashoffset: 360;
+    -webkit-transition: 0.6s ease-out;
+    -o-transition: 0.6s ease-out;
+    transition: 0.6s ease-out;
+}
+
+svg {
+    fill: #333;
+    stroke-width: 17px;
+    stroke-linecap: round;
+}
+
+.card:hover .stroke {
+
+    stroke-dashoffset: 80;
+    -webkit-transition: 0.6s ease-out;
+    -o-transition: 0.6s ease-out;
+    transition: 0.6s ease-out;
+}
+
+.card:hover #back {
+    stroke-dashoffset: 280;
+    -webkit-transition: 0.6s ease-out;
+    -o-transition: 0.6s ease-out;
+    transition: 0.6s ease-out;
+}
+
+.card:hover #style {
+    stroke-dashoffset: 100;
+    -webkit-transition: 0.6s ease-out;
+    -o-transition: 0.6s ease-out;
+    transition: 0.6s ease-out;
+}
+
+.card:hover #typescript {
+
+    stroke-dashoffset: 220;
+    -webkit-transition: 0.6s ease-out;
+    -o-transition: 0.6s ease-out;
+    transition: 0.6s ease-out;
+}
+
+.testimonials .card .content .circle #Calque_1 {
+    position: absolute;
+    top: -webkit-calc(-60.5% - 190px);
+    top: calc(-60.5% - 190px);
+    left: -79.5%;
+    color: #333;
+
+    width: 700px;
+    height: 700px;
+    z-index: 15;
+}
+
+.testimonials .card .content .circle #Calque_2 {
+    position: absolute;
+    top: -webkit-calc(-60.5% - 190px);
+    top: calc(-60.5% - 190px);
+    left: -79.50%;
+    color: #333;
+
+    width: 700px;
+    height: 700px;
+    z-index: 15;
+}
+
+.testimonials .card .content .circle #Calque_3 {
+    position: absolute;
+    top: -webkit-calc(-60.5% - 190px);
+    top: calc(-60.5% - 190px);
+    left: -79.50%;
+    color: #333;
+
+    width: 700px;
+    height: 700px;
+    z-index: 15;
+}
+
+.testimonials .card .content .circle #Calque_4 {
+    position: absolute;
+    top: -webkit-calc(-60.5% - 190px);
+    top: calc(-60.5% - 190px);
+    left: -79.50%;
+    color: #333;
+
+    width: 700px;
+    height: 700px;
+    z-index: 15;
+}
+
+/******************************************************************************* FIN CV **************************************/
+/* Affichage sur tablette */
+@media (min-width: 580px) {
+    header h1 {
+        text-align: left;
+    }
+
+    header ul {
+        float: right;
+    }
+
+    header li {
+        float: left;
+    }
+
+    header li {
+        margin-left: 15px;
+    }
+
+    section {
+        text-align: left;
+    }
+
+    .article div:nth-child(2n+1) {
+        clear: left;
+    }
+
+
+}
+
+/* Affichage écran de bureau */
+@media (min-width:980px) {
+    .article div:nth-child(2n+1) {
+        clear: none;
+    }
+
+    .article div:nth-child(3n+1) {}
+
+    article img {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        -webkit-transition: filter .6s linear;
+        transition: filter .6s linear;
+    }
+
+    article:hover img {
+        -webkit-filter: none;
+        filter: none;
+    }
+
+
+}
+
+@media (max-width: 9800) {
+    div.Title {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
